@@ -1,0 +1,8 @@
+/*
+  Content-Security-Policy: default-src 'self' gabler.app *.gabler.app; style-src 'sha256-2k6tRHZ35DTI88fTbcAG8hKdOeuGhbRe9rpSVHPoNmo='; script-src gabler.app *.gabler.app static.cloudflareinsights.com; connect-src cloudflareinsights.com
+  Cache-Control: max-age=2629746, public
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  access-control-allow-origin: *

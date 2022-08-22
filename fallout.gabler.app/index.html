@@ -1,0 +1,38 @@
+---
+title: Zaporizhzhia Fallout
+website: fallout.gabler.app
+linklist:
+  Nick: https://nick.gabler.app
+  Blog: https://blog.gabler.app
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nick Gabler, Nicholas Gabler, Links, Resume, Instagram, Twitter, Email, Github, Systems Engineer, Systems Administrator, Linux Administrator, How to hire a systems engineer, How to hire a systems administrator, Website designer, AWS cloud practitioner, AWS certified cloud practitioner, Las Vegas, Vegas, Remote">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>{{ lastname }}</title>
+  <style>h1,ul{margin-block-start:0%;margin-block-end:0%;margin-inline-start:0;margin-inline-end:0}body,html{font-family:'JetBrains Mono',monospace;font-style:normal;font-weight:800;color:#fff;background-color:#000;font-size:100%;margin:0;padding:0;resize:none;width:1200px}h1{display:block;font-size:96px;font-weight:700;margin-left:5%}ul{display:list-item;font-size:48px;list-style-type:"\2500\0020";padding-inline-start:0%;padding-top:1.25%;margin-left:10%}a:link{color:#fff;text-decoration-line:none}a:visited{color:grey}a:hover{color:#e6e6e6}a:active{color:#999}</style>
+</head>
+
+<body>
+  <h1>{{ title }}</h1><br>
+  <script type="text/javascript">
+  $.get('https://radiation.gabler.workers.dev/radlevel.csv', function(data) {
+  var build = '<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse" width="100%">\n';
+  var head = data.split("\n");
+  for(var i=0;i<1;i++){
+  build += "<tr><th>" + head[i] + "</th></tr>";
+  for(var i=1;i<head.length;i++){
+  build += "<tr><td>" + head[i].split("\n") + "</td></tr>";
+  }
+  }
+  build += "</table>";
+  $('#wrap').append(build);
+  });
+</script>
+</body>
+
+</html>
