@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self' gabler.app *.gabler.app; style-src 'sha256-d4QVgUqWAWYL9qIIM/Yh2AUWDeUuEdzbE+5aZkxQLpo='; script-src gabler.app *.gabler.app static.cloudflareinsights.com fallout-gabler-app.pages.dev 'sha256-l6fmE/SsemBMQbS8HYDSU/AwT0XUlOTZ2JkXJv5+WCc='; connect-src cloudflareinsights.com radiation.gabler.workers.dev
+  Content-Security-Policy: default-src 'self' gabler.app *.gabler.app; style-src 'sha256-d4QVgUqWAWYL9qIIM/Yh2AUWDeUuEdzbE+5aZkxQLpo='; script-src gabler.app *.gabler.app static.cloudflareinsights.com fallout-gabler-app.pages.dev 'sha256-EKRUW1KFJYVrF2lWKYf2KKdl9N6Kjs2Jo5n7jIJ4Q5o='; connect-src cloudflareinsights.com radiation.gabler.workers.dev
   Cache-Control: max-age=2629746, public
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
