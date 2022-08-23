@@ -21,7 +21,8 @@ linklist:
   <h1>{{ title }}</h1><br>
   <p>Radiation history data from www.gmcmap.com</p>
   <script src="d3.v3.min.js"></script>
-
+  <div>
+	<p>Constanta 650KM South-West</p>
         <script type="text/javascript"charset="utf-8">
             d3.text("https://radiation.gabler.workers.dev/radlevel.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
@@ -39,6 +40,67 @@ linklist:
                         .text(function(d) { return d; });
             });
   </script>
+  </div>
+    <div>
+        <p>Taganrog 290KM East</p>
+        <script type="text/javascript"charset="utf-8">
+            d3.text("https://radiation.gabler.workers.dev/taganrog.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
+
+                var container = d3.select("body")
+                    .append("table")
+
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            });
+  </script>
+  </div>
+    <div>
+        <p>Chisinau 450KM West</p>
+        <script type="text/javascript"charset="utf-8">
+            d3.text("https://radiation.gabler.workers.dev/chisinau.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
+
+                var container = d3.select("body")
+                    .append("table")
+
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            });
+  </script>
+  </div>
+    <div>
+        <p>Kyiv 450KM North-West</p>
+        <script type="text/javascript"charset="utf-8">
+            d3.text("https://radiation.gabler.workers.dev/kyiv.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
+
+                var container = d3.select("body")
+                    .append("table")
+
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            });
+  </script>
+  </div>
 </body>
 
 </html>
