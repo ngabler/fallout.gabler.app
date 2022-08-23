@@ -23,7 +23,7 @@ linklist:
 
         <script type="text/javascript"charset="utf-8">
             d3.text("https://radiation.gabler.workers.dev/radlevel.csv", function(data) {
-                var parsedCSV = d3.csv.parseRows(data).split("\n").slice(2).join("\n").slice(0, 10);
+                var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
 
                 var container = d3.select("body")
                     .append("table")
