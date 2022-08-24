@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self' gabler.app *.gabler.app; style-src 'sha256-7HLAUDGO1day6QjGSTP67DPzffHTxlD+fmvFZdP6+/E='; script-src gabler.app *.gabler.app static.cloudflareinsights.com fallout-gabler-app.pages.dev 'sha256-EKRUW1KFJYVrF2lWKYf2KKdl9N6Kjs2Jo5n7jIJ4Q5o=' 'sha256-DxJ0DiYaTCMjmEelu3pUgad8TRRHZdQoc/z56coUnec=' 'sha256-vpUBDOqOqTj09LBdxmsWoteRVkZzM85BigKLSWg99bQ=' 'sha256-N/Q98iUto1WhyghUZ02MSQgfmKWPWS77CQbbxfWuDxc=' 'sha256-AK9RFtqcq0fLjqN2qYj1O9W/A/QIQiPwM8ecRKAfnQA='; connect-src cloudflareinsights.com radiation.gabler.workers.dev
+  Content-Security-Policy: default-src 'self' gabler.app *.gabler.app; style-src 'sha256-7HLAUDGO1day6QjGSTP67DPzffHTxlD+fmvFZdP6+/E='; script-src gabler.app *.gabler.app static.cloudflareinsights.com fallout-gabler-app.pages.dev 'sha256-QthkYDn0tF7GUGV/2NdDxGFXxY4DzVccL9qQLDc/tak=' 'sha256-5LOq60Yps+3EP9Jud1HDjYou0svvdyeLdPEI/QKFvnc=' 'sha256-pprBdq5xF88ZY44L7bWNiHvUiRF14V26z9IoS/8Qa30=' 'sha256-qag234KCaTfgDJcgCqAqoRXKBAyh87Wycym97a0cmZc='; connect-src cloudflareinsights.com radiation.gabler.workers.dev
   Cache-Control: max-age=2629746, public
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
