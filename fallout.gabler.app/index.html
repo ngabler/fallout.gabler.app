@@ -27,7 +27,7 @@ linklist:
             d3.text("https://radiation.gabler.workers.dev/constanta.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
 
-                var container = d3.select("constanta")
+                var container = d3.select("#constanta")
                     .append("table")
 
                     .selectAll("tr")
@@ -47,7 +47,7 @@ linklist:
             d3.text("https://radiation.gabler.workers.dev/taganrog.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
 
-                var container = d3.select("taganrog")
+                var container = d3.select("#taganrog")
                     .append("table")
 
                     .selectAll("tr")
@@ -67,7 +67,7 @@ linklist:
             d3.text("https://radiation.gabler.workers.dev/chisinau.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
 
-                var container = d3.select("chisinau")
+                var container = d3.select("#chisinau")
                     .append("table")
 
                     .selectAll("tr")
@@ -87,7 +87,7 @@ linklist:
             d3.text("https://radiation.gabler.workers.dev/kyiv.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data).slice(2).slice(0, 10);
 
-                var container = d3.select("kyiv")
+                var container = d3.select("#kyiv")
                     .append("table")
 
                     .selectAll("tr")
