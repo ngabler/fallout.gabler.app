@@ -14,15 +14,15 @@ linklist:
   <meta name="description" content="Nick Gabler, Nicholas Gabler, Links, Resume, Instagram, Twitter, Email, Github, Systems Engineer, Systems Administrator, Linux Administrator, How to hire a systems engineer, How to hire a systems administrator, Website designer, AWS cloud practitioner, AWS certified cloud practitioner, Las Vegas, Vegas, Remote">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <title>{{ title }}</title>
-  <style>h1,ul{margin-block-start:0%;margin-block-end:0%;margin-inline-start:0;margin-inline-end:0}body,html{font-family:"JetBrains Mono",monospace;font-style:normal;font-weight:800;color:#fff;background-color:#000;font-size:100%;margin:0;padding:0;resize:none;width:1200px}h1{display:block;font-size:96px;font-weight:700;margin-left:5%}ul{display:list-item;font-size:48px;list-style-type:"\2500\0020";padding-inline-start:0%;padding-top:1.25%;margin-left:10%}a:link{color:#fff;text-decoration-line:none}a:visited{color:grey}a:hover{color:#e6e6e6}a:active{color:#999}div{position:fixed}div#outer{position:relative}.top{height:40%;top:0}.bottom{height:60%;bottom:0}.left{width:35%;left:0}.right{width:65%;right:0}.Header{position:relative}.Footer{position:relative}</style>
+  <style>h1,ul{margin-block-start:0%;margin-block-end:0%;margin-inline-start:0;margin-inline-end:0}body,html{font-family:"JetBrains Mono",monospace;font-style:normal;font-weight:800;color:#fff;background-color:#000;font-size:100%;margin:0;padding:0;resize:none;width:100%}h1{display:block;font-size:96px;font-weight:700;margin-left:5%}ul{display:list-item;font-size:48px;list-style-type:"\2500\0020";padding-inline-start:0%;padding-top:1.25%;margin-left:10%}a:link{color:#fff;text-decoration-line:none}a:visited{color:grey}a:hover{color:#e6e6e6}a:active{color:#999}.Header{position:relative}.Footer{position:relative}#container1{height:100%;width:100%;font-size:0}#container2{height:100%;width:100%;font-size:0}#kyiv{width:50%}#chisinau{width:50%}#taganrog{width:50%}#constanta{width:50%}#constanta,#taganrog{display:inline-block;*display:inline;zoom:1;vertical-align:top;font-size:12px}#chisinau,#kyiv{display:inline-block;*display:inline;zoom:1;vertical-align:top}</style>
 </head>
 
 <body>
   <div class="Header">
   <h1>{{ title }}</h1><br>
   </div>
-  <div id="outer">
-  <div id="constanta" class="top left">
+  <div id="container1">
+  <div id="constanta">
   <script src="d3.v3.min.js"></script>
 	<p>Constanta 650KM South-West</p>
         <script type="text/javascript"charset="utf-8">
@@ -43,7 +43,7 @@ linklist:
             });
   </script>
   </div>
-        <div id="taganrog" class="top right">
+        <div id="taganrog">
         <p>Taganrog 290KM East</p>
         <script type="text/javascript"charset="utf-8">
             d3.text("https://radiation.gabler.workers.dev/taganrog.csv", function(data) {
@@ -63,7 +63,8 @@ linklist:
             });
   </script>
   </div>
-    <div id="chisinau" class="bottom left">
+  <div id="container2">
+    <div id="chisinau">
         <p>Chisinau 450KM West</p>
         <script type="text/javascript"charset="utf-8">
             d3.text("https://radiation.gabler.workers.dev/chisinau.csv", function(data) {
@@ -83,7 +84,7 @@ linklist:
             });
   </script>
   </div>
-    <div id="kyiv" class="bottom right">
+    <div id="kyiv">
         <p>Kyiv 450KM North-West</p>
         <script type="text/javascript"charset="utf-8">
             d3.text("https://radiation.gabler.workers.dev/kyiv.csv", function(data) {
@@ -102,6 +103,7 @@ linklist:
                         .text(function(d) { return d; });
             });
   </script>
+  </div>
   </div>
   </div>
   <div class="Footer">
